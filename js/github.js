@@ -8,8 +8,6 @@ document.getElementById('delete-confirm').addEventListener('keyup', function(eve
         deleteButton.setAttribute('disabled', true);
     }
 })
-
-
 /* document.getElementById('btn-delete').addEventListener('click', function(){
     const secretInfo = document.getElementById('secret-info');
 

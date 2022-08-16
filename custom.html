@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Events</title>
+    <style>
+        .test {
+            background-color: ligh;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 onclick="console.log('i am clicked')">Testing event handler in html</h1>
+    <!-- * option 1 -->
+    <button onclick="console.log(7)">Click Me</button>
+    <button onclick="document.body.style.backgroundColor ='lightBlue'">Make lightBlue</button>
+
+    <!-- * option 2 -->
+    <button onclick="makeLightCoral()">Make LightCoral</button>
+
+    <!-- * option 3 -->
+    <button id="makeLightSkyBlue">Make lightskyblue</button>
+
+    <!-- * option 3.1 another -->
+    <button id="make-gray">Make gray</button>
+
+    <!-- * option 4 addEventListener() -->
+    <button id="make-steelBlue">Make SteelBlue</button>
+
+    <!-- * option 4.1 addEventListener() -->
+    <button id="make-lightgreen">Make LightGreen</button>
+
+    <!-- * option 4.2 final addEventListener() -->
+    <!-- ! we will use this method -->
+    <button id="make-lightsalmon">Make LightSalmon</button>
+
+    <!-- * more events -->
+    <br><br>
+    <button id="btn-more">More Button</button>
+    <input type="text" name="" id="input-field">
+
+    <!-- * add comment -->
+    <!-- <h1>Add Your Comment</h1>
+    <div id="comment-container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quis ipsum aliquam, dolores quam adipisci
+            error, repudiandae deserunt eveniet aut perferendis odit veritatis dolorum sunt a cum excepturi, dicta modi!
+        </p>
+        <p>Cum similique provident cupiditate aliquid culpa accusantium deserunt veniam. Aperiam, eligendi aliquid at
+            vero quaerat id iure aspernatur nulla eos, odit repellat, accusantium ut autem asperiores delectus ea
+            repudiandae ducimus.</p>
+        <p>Nam quasi quas praesentium sunt accusantium totam molestiae fugit ex cumque ab libero, doloribus, officiis ea
+            cum rerum amet perferendis at. Reprehenderit, facilis eligendi? Dolor asperiores nesciunt ducimus esse
+            architecto.</p>
+    </div>
+    <textarea name="" id="comment-box" cols="60" rows="5" placeholder="add your comment..."></textarea>
+    <br>
+    <button id="comment-btn">Post</button><br><br> -->
+
+    <!-- * delete confirmation github -->
+    <h1>Delete Confirmation</h1>
+    <input type="text" id="delete-confirm" placeholder="please type delete">
+    <button id="delete-btn" disabled>Delete</button>
+
+
+
+
+
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
