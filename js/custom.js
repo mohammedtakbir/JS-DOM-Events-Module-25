@@ -32,26 +32,26 @@ document.getElementById('make-lightsalmon').addEventListener('click', () =>{
 
 // * more events
 // ? 1. onclick
-document.getElementById('btn-more').addEventListener('click', function(){
+/* document.getElementById('btn-more').addEventListener('click', function(){
     console.log('event triggerd');
-});
+}); */
 
 // ? 2. mouseEnter
-document.getElementById('btn-more').addEventListener('mouseenter', function(){
+/* document.getElementById('btn-more').addEventListener('mouseenter', function(){
     console.log('event triggerd');
-});
+}); */
 // ? 3. mouseMove
-document.getElementById('btn-more').addEventListener('mousemove', function(){
+/* document.getElementById('btn-more').addEventListener('mousemove', function(){
     console.log('event triggerd');
-});
+}); */
 // ? 4. focus
-document.getElementById('input-field').addEventListener('focus', () =>{
+/* document.getElementById('input-field').addEventListener('focus', () =>{
     console.log('focus triggerd')
-})
+}) */
 // ? 5. blur
-document.getElementById('input-field').addEventListener('blur', () =>{
+/* document.getElementById('input-field').addEventListener('blur', () =>{
     console.log('blur triggerd')
-})
+}) */
 // ? 5. keydown
 /* document.getElementById('input-field').addEventListener('keydown', (e) =>{
     console.log(e.target.value)
@@ -61,31 +61,31 @@ document.getElementById('input-field').addEventListener('blur', () =>{
     console.log(event.target.value)
 }) */
 // ? 5. keyup
-document.getElementById('input-field').addEventListener('keyup', (event) =>{
+/* document.getElementById('input-field').addEventListener('keyup', (event) =>{
     console.log(event.target.value)
 })
-
+ */
 // * add comment
-/* document.getElementById('comment-btn').addEventListener('click', function(){
-    const comentBox = document.getElementById('comment-box');
-    const newComment = comentBox.value;
+document.getElementById('comment-btn').addEventListener('click', function(){
+    const commentBox = document.getElementById('comment-box');
+    const newComment = commentBox.value;
 
     const commentContainer = document.getElementById('comment-container');
     const p = document.createElement('p');
     p.innerText = newComment;
     commentContainer.appendChild(p);
-    comentBox.value = '';
-}) */
+
+})
+
 
 // * delete confirmation github
 document.getElementById('delete-confirm').addEventListener('keyup', function(event){
-    const deleteButton = document.getElementById('delete-btn');
-    const text = event.target.value;
-    if(text === 'delete'){
-        deleteButton.removeAttribute('disabled');
+    const typedNumber = event.target.value;
+    const deleteBtn = document.getElementById('delete-btn');
+    if(typedNumber === 'delete'){
+        deleteBtn.removeAttribute('disabled')
     }
     else{
-        deleteButton.setAttribute('disabled', true)
+        deleteBtn.setAttribute('disabled', true)
     }
-
 })
